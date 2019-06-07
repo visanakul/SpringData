@@ -1,0 +1,31 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /springdata
+  
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: sys
+  jpa:
+    show-sql: true
+
+    hibernate:
+      ddl-auto: update
+      
+app:
+  properties:
+     welcomeMsg: Welcome to Spring Data Module
+     saveSuccessMsg: Record saved successfully...
+     saveFailMsg: Record saved error...
+     deleteSuccessMsg: Record deleted successfully...
+     deleteFailMsg: Record deleted error...
+     updateSuccessMsg: Record updated successfully...
+     updateFailMsg: Record updated error...
+     bookSearchFailMsg: Record Unavailable...

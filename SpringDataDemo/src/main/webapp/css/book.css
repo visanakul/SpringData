@@ -1,0 +1,71 @@
+body {
+	padding: 40px;
+}
+
+table {
+	padding: 10px;
+	margin: auto;
+	border: 1px black solid;
+	width: auto;
+}
+
+caption {
+	padding: 5px;
+	font-size: 1.5rem;
+}
+
+td {
+	padding: 3px;
+}
+
+td:first-child {
+	text-align: right;
+}
+
+td:last-child {
+	text-align: center;
+}
+span{
+	margin-top:10px;
+	color:green;
+	display:block;
+	text-align: center;
+	font-size: 1.25rem;
+}
+.btnContainer{
+	display: flex;
+	justify-content: space-around;
+}
+.error{
+	color:red;
+	font-size: 1rem;
+}
+table.books{
+	border-collapse: collapse;
+}
+table.books th{
+	font-size: 1.2rem;
+}
+table.books td,th{
+	padding: 3px 10px;
+}
+table.books td:first-child,table.books td:last-child{
+	text-align: left;
+}
+table.books td:nth-child(2){
+	text-align: right;
+}
+#hideMe {
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
